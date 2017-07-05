@@ -5,9 +5,15 @@ $(".radioTitle[name='titleRadio']").click(function () {
 
 });
 
-$(".radioRegistration[name='registrationRadio']").click(function () {
+$(".officerRegistration[name='registrationRadio']").click(function () {
     radioListValue = this.value;
-    $(".registration .radioListValue").val(radioListValue);
+    $(".officer .radioListValue").val(radioListValue);
+
+});
+
+$(".dietaryRegistration[name='registrationRadio']").click(function () {
+    radioListValue = this.value;
+    $(".dietary .radioListValue").val(radioListValue);
 
 });
 
