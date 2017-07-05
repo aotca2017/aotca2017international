@@ -1,0 +1,17 @@
+title: AOTCA 2017
+email:
+description: > #
+  Asia Oceania Tax Consultants' Association (AOTCA)
+url: https://aotca2017.github.io
+baseurl: /aotca2017international/
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
