@@ -93,10 +93,10 @@
             <div class="col-md-12">
                 <h4 class="form-header">Delegate</h4>
                 <label class="radio-inline">
-                    <input class="radioGroup" type="radio" name="radioGroup" checked="checked"  value="1" required>International Delegate
+                    <input class="delegateRadio" type="radio" name="delegateRadio" checked="checked"  value="1" required>International Delegate
                 </label>
                 <label class="radio-inline">
-                    <input class="radioGroup" type="radio" name="radioGroup" value="2">Complimentary Delegate
+                    <input class="delegateRadio" type="radio" name="delegateRadio" value="2">Complimentary Delegate
                 </label>
             </div>
 
@@ -149,45 +149,55 @@
         <hr class="hr col-md-12"/>
         <div class="additional-person-container">
             <div class="form-item header-bottom clearfix col-md-12">
-
                 <h2 class="form-header stylized-header">Accompanying Person at US$200</h2>
                 <p class="content-description">Please indicate your interest to attend the following functions.</p>
             </div>
-            <div class="additional-person-list col-md-12">
-                <div class="form-item clearfix col-md-6">
-                    <span class="content-title stylized-header">How many will accompany you?</span>
-                    <select  id="entry.350075210" name="entry.350075210" class="menu-select form-control" aria-required="true" aria-invalid="false">
-                        <option class="menu-choice" name="entry.350075210" value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                    </select>
-                </div>
-            </div>
-            <div class="additional-person-list col-md-12">
-                <div class="form-item clearfix col-md-6">
-                    <span class="content-title stylized-header">Name/Gala Dinner/Dietary/City Tour</span>
-                    <textarea class="content-input form-control" placeholder="John Doe/Yes/Halal/No" name="entry.902056822" id="entry.902056822" autocomplete="off" required type="text" value="" aria-required="true" aria-invalid="false"></textarea>
-                </div>
+
+            <div class="col-md-12">
+                <h4 class="form-header">Are you going to be accompanied by someone?</h4>
+                <label class="radio-inline">
+                    <input class="accompanyRadio" type="radio" name="accompanyRadio" value="1" required>Yes
+                </label>
+                <label class="radio-inline">
+                    <input class="accompanyRadio" type="radio" name="accompanyRadio" value="2" checked="checked" >No
+                </label>
             </div>
 
-
+            <div id="additionalContainer1" class="radioChoice" style="display: none">
+                <div class="additional-person-list col-md-12 no-gutter">
+                    <div class="form-item clearfix col-md-6">
+                        <span class="content-title stylized-header">How many will accompany you?</span>
+                        <select  id="entry.350075210" name="entry.350075210" class="menu-select form-control" aria-required="true" aria-invalid="false">
+                            <option class="menu-choice" name="entry.350075210" value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="additional-person-list col-md-12 no-gutter">
+                    <div class="form-item clearfix col-md-6">
+                        <span class="content-title stylized-header">Name/Gala Dinner/Dietary/City Tour</span>
+                        <textarea class="content-input form-control" placeholder="John Doe/Yes/Halal/No" name="entry.902056822" id="entry.902056822" autocomplete="off" type="text" value="" aria-invalid="false"></textarea>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <hr class="hr col-md-12"/>
