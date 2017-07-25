@@ -46,11 +46,18 @@ $("#hidden_iframe").on('load',function () {
 });
 
 
-$(".radioGroup[name$='radioGroup']").change(function() {
+$(".delegateRadio[name$='delegateRadio']").click(function() {
     var numberChoice = $(this).val();
 
     $("div.formChoice").hide();
     $("#formChoice" + numberChoice).show();
+
+});
+
+$(".accompanyRadio[name$='accompanyRadio']").click(function() {
+    var radioChoice = $(this).val();
+    $("div.radioChoice").hide();
+    $("#additionalContainer" + radioChoice).show();
 
 });
 
