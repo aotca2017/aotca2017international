@@ -113,7 +113,7 @@
 
             <div id="formChoice2" class="formChoice form-item officer clearfix col-md-6" style="display: none">
                 <h2 class="form-header">REGISTRATION CATEGORY</h2>
-                <span class="content-title stylized-header">Complimentary Delegate</span>
+                <span class="content-title stylized-header">Complimentary Delegate(Applies only to AOTCA officers or Representative of member body</span>
                 <select class="form-control " required="" id="entry.805758344" name="entry.805758344" class="menu-select" aria-required="true" aria-invalid="false">
                     <option class="menu-choice" name="entry.805758344" id="entry.805758344"  value="">---</option>
                     <option value="President">President</option>
@@ -126,6 +126,30 @@
                     <option value="Representative of member body">Representative of member body</option>
 
                 </select>
+
+                <hr class="hr col-md-12"/>
+
+                <div class="form-item complimentary-dinner clearfix col-md-12">
+                    <span class="content-title stylized-header">Gala Dinner(19 October)</span>
+                    <label class="radio-inline">
+                        <input class="complimentaryDinner" type="radio" name="complimentaryDinner" value="Yes" required>Yes
+                    </label>
+                    <label class="radio-inline">
+                        <input class="complimentaryDinner" type="radio" name="complimentaryDinner" value="No">No
+                    </label>
+                    <input class="hidden radioListValue" name="entry.209857959" id="entry.209857959" value="">
+                </div>
+
+                <div class="form-item complimentary-tour clearfix col-md-12">
+                    <span class="content-title stylized-header">City Tour (20 October, morning)</span>
+                    <label class="radio-inline">
+                        <input class="complimentaryTour" type="radio" name="complimentaryTour" value="Yes" required>Yes
+                    </label>
+                    <label class="radio-inline">
+                        <input class="complimentaryTour" type="radio" name="complimentaryTour" value="No">No
+                    </label>
+                    <input class="hidden radioListValue" name="entry.1612703363" id="entry.1612703363" value="">
+                </div>
             </div>
 
             <hr class="hr col-md-12"/>
@@ -163,9 +187,9 @@
         <hr class="hr col-md-12"/>
         <div class="additional-person-container">
             <div class="form-item header-bottom clearfix col-md-12">
-                <div class="accompanyCheckBox">
-                    <input type="checkbox" value="200">
-                </div>
+                <!--<div class="accompanyCheckBox">-->
+                    <!--<input type="checkbox" value="200">-->
+                <!--</div>-->
                 <h2 class="form-header stylized-header">Accompanying Person at US$200</h2>
                 <p class="content-description">Please indicate your interest to attend the following functions.</p>
             </div>
@@ -177,7 +201,7 @@
             </div>
             <div class="additional-person-list col-md-12">
                 <div class="form-item clearfix col-md-6">
-                    <span class="content-title stylized-header">Name/Gala Dinner/Dietary/City Tour</span>
+                    <span class="content-title stylized-header">Name/Dietary/Gala Dinner/City Tour</span>
                     <textarea class="content-input form-control" placeholder="John Doe/Halal/Yes/No" name="entry.902056822" id="entry.902056822" autocomplete="off" required type="text" value="" aria-required="true" aria-invalid="false"></textarea>
                 </div>
             </div>
