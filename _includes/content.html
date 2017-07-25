@@ -100,70 +100,84 @@
             <input class="hidden radioListValue" name="entry.1073172025" id="entry.1073172025" value="">
         </div>
 
-        <div class="form-item officer clearfix col-md-6">
-            <h2 class="form-header">REGISTRATION CATEGORY</h2>
-            <span class="content-title stylized-header">Complimentary Delegate</span>
-            <select class="form-control " required="" id="entry.805758344" name="entry.805758344" class="menu-select" aria-required="true" aria-invalid="false">
-                <option class="menu-choice" name="entry.805758344" id="entry.805758344"  value="">---</option>
-                <option value="President">President</option>
-                <option value="Advisor">Advisor</option>
-                <option value="Deputy President">Deputy President</option>
-                <option value="Auditor">Auditor</option>
-                <option value="Honorary Advisor">Honorary Advisor</option>
-                <option value="Secretary General">Secretary General</option>
-                <option value="Treasurer">Treasurer</option>
-                <option value="Representative of member body">Representative of member body</option>
+        <div class="registration-container radioListGroup">
+            <div class="col-md-12">
+                <h4 class="form-header">Delegate</h4>
+                <label class="radio-inline">
+                    <input class="radioGroup" type="radio" name="radioGroup" value="1" required>Complimentary Delegate
+                </label>
+                <label class="radio-inline">
+                    <input class="radioGroup" type="radio" name="radioGroup" checked="checked" value="2">International Delegate
+                </label>
+            </div>
 
-            </select>
+            <div id="formChoice1" class="formChoice form-item officer clearfix col-md-6" style="display: none">
+                <h2 class="form-header">REGISTRATION CATEGORY</h2>
+                <span class="content-title stylized-header">Complimentary Delegate</span>
+                <select class="form-control " required="" id="entry.805758344" name="entry.805758344" class="menu-select" aria-required="true" aria-invalid="false">
+                    <option class="menu-choice" name="entry.805758344" id="entry.805758344"  value="">---</option>
+                    <option value="President">President</option>
+                    <option value="Advisor">Advisor</option>
+                    <option value="Deputy President">Deputy President</option>
+                    <option value="Auditor">Auditor</option>
+                    <option value="Honorary Advisor">Honorary Advisor</option>
+                    <option value="Secretary General">Secretary General</option>
+                    <option value="Treasurer">Treasurer</option>
+                    <option value="Representative of member body">Representative of member body</option>
+
+                </select>
+            </div>
+
+            <hr class="hr col-md-12"/>
+
+            <div id="formChoice2" class="formChoice delegate clearfix col-md-12">
+                <div class="form-item header-bottom clearfix col-md-12">
+                    <h2 class="form-header stylized-header">International Delegate at US$300</h2>
+                    <p class="content-description">Please indicate your interest to attend the following functions.</p>
+                </div>
+
+                <div class="form-item delegate-dinner clearfix col-md-12">
+                    <span class="content-title stylized-header">Gala Dinner(19 October)</span>
+                    <label class="radio-inline">
+                        <input class="delegateDinner" type="radio" name="delegateDinner" value="Yes" required>Yes
+                    </label>
+                    <label class="radio-inline">
+                        <input class="delegateDinner" type="radio" name="delegateDinner" value="No">No
+                    </label>
+                    <input class="hidden radioListValue" name="entry.209857959" id="entry.209857959" value="">
+                </div>
+
+                <div class="form-item delegate-tour clearfix col-md-12">
+                    <span class="content-title stylized-header">City Tour (20 October, morning)</span>
+                    <label class="radio-inline">
+                        <input class="delegateTour" type="radio" name="delegateTour" value="Yes" required>Yes
+                    </label>
+                    <label class="radio-inline">
+                        <input class="delegateTour" type="radio" name="delegateTour" value="No">No
+                    </label>
+                    <input class="hidden radioListValue" name="entry.1612703363" id="entry.1612703363" value="">
+                </div>
+            </div>
+
         </div>
-
-        <hr class="hr col-md-12"/>
-
-
-        <div class="form-item header-bottom clearfix col-md-12">
-            <h2 class="form-header stylized-header">International Delegate at US$300</h2>
-            <p class="content-description">Please indicate your interest to attend the following functions.</p>
-        </div>
-
-        <div class="form-item delegate-dinner clearfix col-md-12">
-            <span class="content-title stylized-header">Gala Dinner(19 October)</span>
-            <label class="radio-inline">
-                <input class="delegateDinner" type="radio" name="delegateDinner" value="Yes" required>Yes
-            </label>
-            <label class="radio-inline">
-                <input class="delegateDinner" type="radio" name="delegateDinner" value="No">No
-            </label>
-            <input class="hidden radioListValue" name="entry.209857959" id="entry.209857959" value="">
-        </div>
-
-        <div class="form-item delegate-tour clearfix col-md-12">
-            <span class="content-title stylized-header">City Tour (20 October, morning)</span>
-            <label class="radio-inline">
-                <input class="delegateTour" type="radio" name="delegateTour" value="Yes" required>Yes
-            </label>
-            <label class="radio-inline">
-                <input class="delegateTour" type="radio" name="delegateTour" value="No">No
-            </label>
-            <input class="hidden radioListValue" name="entry.1612703363" id="entry.1612703363" value="">
-        </div>
-
-
-
         <hr class="hr col-md-12"/>
         <div class="additional-person-container">
             <div class="form-item header-bottom clearfix col-md-12">
+                <div class="accompanyCheckBox">
+                    <input type="checkbox" value="200">
+                </div>
                 <h2 class="form-header stylized-header">Accompanying Person at US$200</h2>
                 <p class="content-description">Please indicate your interest to attend the following functions.</p>
             </div>
             <div class="additional-person-list col-md-12">
                 <div class="form-item clearfix col-md-6">
-                    <span class="content-title stylized-header">How many will accompany you? </span>
+                    <span class="content-title stylized-header">How many will accompany you?</span>
                     <input class="content-input form-control" name="entry.350075210" id="entry.350075210" autocomplete="off" required type="number" value="" aria-required="true" aria-invalid="false">
                 </div>
             </div>
             <div class="additional-person-list col-md-12">
                 <div class="form-item clearfix col-md-6">
-                    <span class="content-title stylized-header">Name/Dietary/Gala Dinner/City Tour</span>
+                    <span class="content-title stylized-header">Name/Gala Dinner/Dietary/City Tour</span>
                     <textarea class="content-input form-control" placeholder="John Doe/Halal/Yes/No" name="entry.902056822" id="entry.902056822" autocomplete="off" required type="text" value="" aria-required="true" aria-invalid="false"></textarea>
                 </div>
             </div>
@@ -173,16 +187,10 @@
 
         <hr class="hr col-md-12"/>
 
-
-
-
         <div class="form-item letter-invitation clearfix col-md-12">
             <h2 class="form-header stylized-header">LETTER OF INVITATION</h2>
             <p class="form-description">On request, the AOTCA 2017 Conference Secretariat will send a letter of invitation to participant to attend the Conference.  Such an invitation is extended specially to assist participants to obtain appropriate visa, approvals, sponsorship or leave.  The letter will be issued only after the payment of registration fee has been received.  It does not imply a commitment on the part of the Organizer to provide any support, financial or otherwise. </p>
             <br/>
-
-
-
             <label class="radio-inline">
                 <input class="letterInvitation" type="radio" name="letterInvitation" value="Send Invitation via Email" required>Please send me a letter of invitation by e-mail.
             </label>
@@ -199,9 +207,7 @@
         <div class="form-item  clearfix col-md-12">
             <h2 class="form-header stylized-header">PAYMENT DECLARATION</h2>
             <p class="form-description">I hereby agree to be bound by the rules and regulations of the Conference and would like to settle the payment of</p>
-            <input class="content-input declaration form-control" placeholder="Amount to be pay" name="entry.2019220793" id="entry.2019220793" autocomplete="off" required type="number" value="" aria-required="true" aria-invalid="false">
-            <span class="separator">by</span>
-            <input class="content-input declaration form-control" placeholder="" name="entry.135134335" id="entry.135134335" autocomplete="off" required type="date" value="" aria-required="true" aria-invalid="false">
+            <input id="totalDeclaration" class="content-input declaration form-control" placeholder="Amount to be pay" name="entry.2019220793" id="entry.2019220793" autocomplete="off" required type="number" value="" aria-required="true" aria-invalid="false">
         </div>
 
         <div class="content-button-container col-md-12">

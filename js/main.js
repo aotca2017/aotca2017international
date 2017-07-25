@@ -22,7 +22,6 @@ $(".delegateTour[name='delegateTour']").click(function () {
 
 });
 
-
 $(".letterInvitation[name='letterInvitation']").click(function () {
     var radioListValue = this.value;
     $(".letter-invitation .radioListValue").val(radioListValue);
@@ -44,6 +43,15 @@ $("#hidden_iframe").on('load',function () {
         $("#myModal").modal('hide');
     }, 2000);
 });
+
+
+$(".radioGroup[name$='radioGroup']").click(function() {
+    var test = $(this).val();
+
+    $("div.formChoice").hide();
+    $("#formChoice" + test).show();
+});
+
 
 
 
