@@ -38,7 +38,7 @@ $("#hidden_iframe").on('load',function () {
 });
 
 
-$(".delegateRadio[name$='delegateRadio']").click(function() {
+$(".delegateRadio").click(function() {
     var numberChoice = $(this).val();
 
     $("div.formChoice").hide();
