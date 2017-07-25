@@ -16,9 +16,15 @@ $(".delegateDinner[name='delegateDinner']").click(function () {
 
 });
 
-$(".delegateTour[name='delegateTour']").click(function () {
+$(".complimentaryDinner[name='complimentaryDinner']").click(function () {
     var radioListValue = this.value;
-    $(".delegate-tour .radioListValue").val(radioListValue);
+    $(".complimentary-dinner .radioListValue").val(radioListValue);
+
+});
+
+$(".complimentaryTour[name='complimentaryTour']").click(function () {
+    var radioListValue = this.value;
+    $(".complimentary-tour .radioListValue").val(radioListValue);
 
 });
 
