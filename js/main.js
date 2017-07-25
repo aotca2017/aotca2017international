@@ -16,17 +16,12 @@ $(".delegateDinner[name='delegateDinner']").click(function () {
 
 });
 
-$(".complimentaryDinner[name='complimentaryDinner']").click(function () {
+$(".delegateTour[name='delegateTour']").click(function () {
     var radioListValue = this.value;
-    $(".complimentary-dinner .radioListValue").val(radioListValue);
+    $(".delegate-tour .radioListValue").val(radioListValue);
 
 });
 
-$(".complimentaryTour[name='complimentaryTour']").click(function () {
-    var radioListValue = this.value;
-    $(".complimentary-tour .radioListValue").val(radioListValue);
-
-});
 
 $(".letterInvitation[name='letterInvitation']").click(function () {
     var radioListValue = this.value;
@@ -51,12 +46,14 @@ $("#hidden_iframe").on('load',function () {
 });
 
 
-$(".radioGroup[name$='radioGroup']").click(function() {
-    var test = $(this).val();
+$(".radioGroup[name$='radioGroup']").change(function() {
+    var numberChoice = $(this).val();
 
     $("div.formChoice").hide();
-    $("#formChoice" + test).show();
+    $("#formChoice" + numberChoice).show();
+
 });
+
 
 
 
