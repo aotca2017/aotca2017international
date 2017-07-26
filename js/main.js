@@ -5,9 +5,20 @@ $(".radioTitle[name='titleRadio']").click(function () {
 
 });
 
-$(".dietaryRegistration[name='delegateDietary']").click(function () {
+// $(".dietaryRegistration[name='delegateDietary']").click(function () {
+//     var radioListValue = this.value;
+//     $(".delegate-dietary .radioListValue").val(radioListValue);
+// });
+
+$(".delegateRadio[name='entry.651229178']").click(function () {
+    var radioListValue = this.value;
+    $(".delegate-choice-container .radioListValue").val(radioListValue);
+});
+
+$(".delegateDietary[name='delegateDietary']").click(function () {
     var radioListValue = this.value;
     $(".delegate-dietary .radioListValue").val(radioListValue);
+
 });
 
 $(".delegateDinner[name='delegateDinner']").click(function () {
