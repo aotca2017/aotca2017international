@@ -110,7 +110,7 @@ $(function(){
             if (model.paymentMethod == 'paypal') {
                 total += 15.00;
             } else {
-                total += 20.00;
+                total += 8.00;
             }
         }
 
