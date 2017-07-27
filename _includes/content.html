@@ -100,7 +100,7 @@
                 <label class="radio-inline">
                     <input class="delegateRadio" type="radio" name="entry.651229178" value="Complimentary">Complimentary Delegate
                 </label>
-                <input class="hidden radioListValue" id="entry.651229178" name="entry.651229178" value="">
+                <!--<input class="hidden radioListValue" id="entry.651229178" name="entry.651229178" value="">-->
             </div>
 
             <hr class="hr col-md-12 clearfix"/>
@@ -237,34 +237,62 @@
         <hr class="hr col-md-12 clearfix"/>
 
         <div class="bank-detail">
-            <h4 class="text-medium">International Bank Transfer</h4>
-            <table class="table table-bordered table-content">
-                <tbody>
-                <tr>
-                    <th>BANK NAME:</th>
-                    <td>Philippine National Bank</td>
-                </tr>
-                <tr>
-                    <th>ACCOUNT NAME:</th>
-                    <td>TAX MANAGEMENT ASSOCIATION OF THE PHILIPPINES</td>
-                </tr>
-                <tr>
-                    <th>SAVINGS ACCT #:</th>
-                    <td>141460000536</td>
-                </tr>
-                <tr>
-                    <th>SWIFT CODE:</th>
-                    <td>PNBMPHMM</td>
-                </tr>
-                <tr>
-                    <th>BANK BRANCH AND ADDRESS</th>
-                    <td>Philippine National Bank San Lorenzo - Arnaiz Branch 1012 a. Arnaiz Ave Makati City</td>
-                </tr>
-                </tbody>
-            </table>
-            <p class="description">A copy of the bank remittance receipt should be sent to AOTCA 2017 Secretariat by email (registration@aotca2017manila.com) once the bank transfer is arranged.</p>
-            <p class="description">All outbound bank charges for remittance should be borne by the remitter and cannot be deducted from the fee.  Please ensure and give instructions to your bank to this effect.  If charges are deducted and the payment received by the Organizer does not cover the total registration fees, the difference will have to be reimbursed to the Organizer on arrival at the Conference.
-            </p>
+            <div class="col-md-12 payment-radio clearfix" >
+                <h4 class="form-header text-medium">Payment Method</h4>
+                <label class="radio-inline">
+                    <input class="paymentRadio" type="radio" name="entry.1146092643" value="bank-deposit" checked="checked" required>International Bank Transfer
+                </label>
+                <label class="radio-inline">
+                    <input class="paymentRadio" type="radio" name="entry.1146092643" value="paypal-payment">Paypal Payment
+                </label>
+            </div>
+
+            <div id="paypal-payment" class="payment-choice col-md-12" style="display: none">
+                <h4 class="text-medium">Paypal Payment(additional $15.00)</h4>
+                <table style="float: left;" border="0" cellpadding="10" cellspacing="0" align="center">
+                    <tr>
+                        <td align="center"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <a href="https://www.paypal.com/us/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/us/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">
+                                <img src="https://www.paypalobjects.com/webstatic/en_AU/i/buttons/btn_paywith_primary_l.png" alt="Pay with PayPal" />
+                            </a>
+                        </td>
+                    </tr>
+                </table><!-- PayPal Logo -->
+            </div>
+
+            <div id="bank-deposit" class="payment-choice col-md-12">
+                <h4 class="text-medium">International Bank Transfer(additional $8.00)</h4>
+                <table class="table table-bordered table-content">
+                    <tbody>
+                    <tr>
+                        <th>BANK NAME:</th>
+                        <td>Philippine National Bank</td>
+                    </tr>
+                    <tr>
+                        <th>ACCOUNT NAME:</th>
+                        <td>TAX MANAGEMENT ASSOCIATION OF THE PHILIPPINES</td>
+                    </tr>
+                    <tr>
+                        <th>SAVINGS ACCT #:</th>
+                        <td>141460000536</td>
+                    </tr>
+                    <tr>
+                        <th>SWIFT CODE:</th>
+                        <td>PNBMPHMM</td>
+                    </tr>
+                    <tr>
+                        <th>BANK BRANCH AND ADDRESS</th>
+                        <td>Philippine National Bank San Lorenzo - Arnaiz Branch 1012 a. Arnaiz Ave Makati City</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="description">A copy of the bank remittance receipt should be sent to AOTCA 2017 Secretariat by email (registration@aotca2017manila.com) once the bank transfer is arranged.</p>
+                <p class="description">All outbound bank charges for remittance should be borne by the remitter and cannot be deducted from the fee.  Please ensure and give instructions to your bank to this effect.  If charges are deducted and the payment received by the Organizer does not cover the total registration fees, the difference will have to be reimbursed to the Organizer on arrival at the Conference.
+                </p>
+            </div>
         </div>
 
         <hr class="hr col-md-12 clearfix"/>
