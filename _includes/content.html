@@ -255,7 +255,7 @@
                     </tr>
                     <tr>
                         <td align="center">
-                            <a href="https://www.paypal.com/us/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/us/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">
+                            <a href="#" id="paypalButton" title="How PayPal Works">
                                 <img src="https://www.paypalobjects.com/webstatic/en_AU/i/buttons/btn_paywith_primary_l.png" alt="Pay with PayPal" />
                             </a>
                         </td>
@@ -322,4 +322,18 @@
             <button data-toggle="modal" type="submit" id="ss-submit" class="submit-button stylized-header">SUBMIT YOUR REGISTRATION</button>
         </div>
     </form>
+
+    <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" hidden target="_blank">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="upload" value="1">
+        <input type="hidden" name="business" value="aotca2017@gmail.com">
+        <input type="hidden" name="item_name_1" value="AOTCA2017Manila">
+        <input type="hidden" name="amount_1" value="">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+
 </div>
