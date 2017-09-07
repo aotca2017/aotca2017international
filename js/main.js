@@ -50,9 +50,6 @@ $("#form-content").on("submit",function(){
     $("#hidden_iframe").on('load',function () {
         $("#myModal").modal('show');
         $("#form-content")[0].reset();
-        setTimeout(function(){
-            $("#myModal").modal('hide');
-        }, 2000);
     });
 });
 
