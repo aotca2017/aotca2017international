@@ -243,34 +243,69 @@
         <hr class="hr col-md-12 clearfix"/>
 
         <div class="bank-detail">
-            <h4 class="text-medium">International Bank Transfer</h4>
-            <table class="table table-bordered table-content">
-                <tbody>
-                <tr>
-                    <th>BANK NAME:</th>
-                    <td>Philippine National Bank</td>
-                </tr>
-                <tr>
-                    <th>ACCOUNT NAME:</th>
-                    <td>TAX MANAGEMENT ASSOCIATION OF THE PHILIPPINES</td>
-                </tr>
-                <tr>
-                    <th>SAVINGS ACCT #:</th>
-                    <td>141460000536</td>
-                </tr>
-                <tr>
-                    <th>SWIFT CODE:</th>
-                    <td>PNBMPHMM</td>
-                </tr>
-                <tr>
-                    <th>BANK BRANCH AND ADDRESS</th>
-                    <td>Philippine National Bank San Lorenzo - Arnaiz Branch 1012 a. Arnaiz Ave Makati City</td>
-                </tr>
-                </tbody>
-            </table>
-            <p class="description">A copy of the bank remittance receipt should be sent to AOTCA 2017 Secretariat by email (registration@aotca2017manila.com) once the bank transfer is arranged.</p>
-            <p class="description">All outbound bank charges for remittance should be borne by the remitter and cannot be deducted from the fee.  Please ensure and give instructions to your bank to this effect.  If charges are deducted and the payment received by the Organizer does not cover the total registration fees, the difference will have to be reimbursed to the Organizer on arrival at the Conference.
-            </p>
+            <div class="col-md-12 payment-radio clearfix" >
+                <h4 class="form-header text-medium">Payment Method</h4>
+                <label class="radio-inline">
+                    <input class="paymentRadio" type="radio" name="entry.1146092643" value="bank-deposit" checked="checked" required>International Bank Transfer
+                </label>
+                <label class="radio-inline">
+                    <input class="paymentRadio" type="radio" name="entry.1146092643" value="paypal-payment">Paypal Payment
+                </label>
+            </div>
+
+            <div id="paypal-payment" class="payment-choice col-md-12" style="display: none">
+                <div class="col-md-12">
+                    <h4 class="text-medium">Paypal Payment(additional $15.00)</h4>
+
+                    <table style="float: left;" border="0" cellpadding="10" cellspacing="0" align="center">
+                        <tr>
+                            <td align="center"></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <a href="#" id="paypalButton" title="How PayPal Works">
+                                    <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" alt="Check out with PayPal" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table><!-- PayPal Logo -->
+                </div>
+                <div class="form-item clearfix  col-md-6">
+                    <span class="content-title paypal-text">After PayPal payment, go back to this page and copy the <b class="text-medium">"PayPal receipt number"</b> and paste it below.</span>
+                    <input class="content-input form-control paypal-input" name="entry.723987020" id="entry.723987020" autocomplete="off" type="text" value="" aria-invalid="false">
+                </div>
+            </div>
+
+            <div id="bank-deposit" class="payment-choice col-md-12">
+                <h4 class="text-medium">International Bank Transfer(additional $8.00)</h4>
+                <table class="table table-bordered table-content">
+                    <tbody>
+                    <tr>
+                        <th>BANK NAME:</th>
+                        <td>Philippine National Bank</td>
+                    </tr>
+                    <tr>
+                        <th>ACCOUNT NAME:</th>
+                        <td>TAX MANAGEMENT ASSOCIATION OF THE PHILIPPINES</td>
+                    </tr>
+                    <tr>
+                        <th>SAVINGS ACCT #:</th>
+                        <td>141460000536</td>
+                    </tr>
+                    <tr>
+                        <th>SWIFT CODE:</th>
+                        <td>PNBMPHMM</td>
+                    </tr>
+                    <tr>
+                        <th>BANK BRANCH AND ADDRESS</th>
+                        <td>Philippine National Bank San Lorenzo - Arnaiz Branch 1012 a. Arnaiz Ave Makati City</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="description">A copy of the bank remittance receipt should be sent to AOTCA 2017 Secretariat by email (registration@aotca2017manila.com) once the bank transfer is arranged.</p>
+                <p class="description">All outbound bank charges for remittance should be borne by the remitter and cannot be deducted from the fee.  Please ensure and give instructions to your bank to this effect.  If charges are deducted and the payment received by the Organizer does not cover the total registration fees, the difference will have to be reimbursed to the Organizer on arrival at the Conference.
+                </p>
+            </div>
         </div>
 
         <hr class="hr col-md-12 clearfix"/>
@@ -299,5 +334,18 @@
         <div class="content-button-container col-md-12">
             <button data-toggle="modal" type="submit" id="ss-submit" class="submit-button stylized-header">SUBMIT YOUR REGISTRATION</button>
         </div>
+    </form>
+
+    <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" hidden target="_blank">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="upload" value="1">
+        <input type="hidden" name="business" value="aotca2017@gmail.com">
+        <input type="hidden" name="item_name_1" value="AOTCA2017Manila Fee">
+        <input type="hidden" name="amount_1" value="">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="no_shipping" value="1">
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
 </div>
