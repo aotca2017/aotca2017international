@@ -116,6 +116,7 @@ $(function(){
         model.courierRequested = data['entry.193270809'] == 'Send Invitation via Courier';
         // model.paymentMethod = 'bank-deposit';
         model.paymentMethod = data['entry.1146092643'];
+        model.memberPosition = data['entry.651229178'];
 
 
         var total = 0;
@@ -142,12 +143,25 @@ $(function(){
             }
         }
 
+        //Delegate choice
+        if(model.memberPosition == 'Complimentary'){
+            $(".member-position").attr("required", true);
+        } else{
+            $(".member-position").attr("required", false);
+        }
+
         //Paypal input checker
         if(model.paymentMethod == 'paypal-payment'){
             $(".paypal-input").attr("required", true);
         } else{
             $(".paypal-input").attr("required", false);
         }
+
+
+
+
+
+
 
         $total.val(total);
 
